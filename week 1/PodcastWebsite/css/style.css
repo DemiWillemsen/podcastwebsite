@@ -1,0 +1,206 @@
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: rgb(249, 249, 211);
+    color: rgb(240, 217, 1);
+}
+
+/* het logo en de linkjes naar extra pagina`s */
+header {
+    background-color: rgb(245, 230, 99);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.9em;
+    padding-bottom: 0.07em;
+    padding-inline: 5em;
+    color: rgb(240, 217, 1);
+}
+
+/* alles hieronder zijn de buttons, home-afleveringen etc */
+a {
+    color: rgb(220, 40, 136);
+    background-color: rgb(249, 249, 211);
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.65s ease 0.02s;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    color: black;
+    margin: 0px 22px;
+    letter-spacing: normal;
+    display: flex;
+    list-style-type: none;
+}
+a:visited {
+    color: beige;
+    background-color: rgb(245, 230, 99);
+}
+a:hover {
+    color: rgb(249, 249, 211);
+    background-color: beige;
+    transform: scale(1.5);
+}
+/* tot hier */
+
+
+/* Dit is dat het logo beweegt */
+.logosurvivalgids {
+    animation-name: logo;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: unset;
+}
+@keyframes logo {
+    from { 
+        transform: translateX(-100%); 
+    }
+    to { 
+        transform: translateX(0); 
+    }
+    50% { 
+        transform: rotate(360deg); 
+    }
+    75% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+
+/* Kopteksten */
+h1 {
+    color: rgb(229, 212, 20);
+    text-align: center;
+    font-size: 35px;
+    margin: 1em;
+    padding: 0.8em;
+    border: 3px solid black;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 238);
+    font-weight: 800;
+}
+
+
+/* de contact gegevens */
+footer  {
+    margin-top: 300px;
+    padding: 0.01em;
+    background-color: rgb(250, 250, 238);
+    text-align: center;
+    color: black;
+}
+
+
+.welkomallemaal {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.slogan {
+    background-color: rgba(229, 212, 20, 0.423);
+    color: black;
+    padding: 1em;
+    margin: 250px;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 150px;
+}
+
+
+.logosurvivalgids {
+    width: 170px;
+    height: 170px;
+}
+
+
+/* afleveringen pagina */
+.afleveringen {
+    margin: 30px;
+    width: 100%;
+}
+.afleveringentekst h2 {
+    color: rgb(240, 217, 1);
+    background-color: white;
+    border: 2px solid rgb(240, 217, 1) ;
+    padding: 0.3em;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 60px;
+}
+.afleveringentekst p {
+    color: black;
+    margin-left: 30px;
+    margin-right: 90px;
+    margin-bottom: 90px;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* einde aflevering pagina */
+
+
+/* dit is op de contact pagina */
+.contact {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* alles hieronder zijn de buttons, home aflevering etc */
+a {
+    color: black;
+    background-color: rgb(253, 253, 203);
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.65s ease 0.05s;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: rgb(240, 217, 1);
+    background-color: beige;
+    transform: scale(1.4);
+}
+/* tot hier */
+
+
+/* alles hieronder is de overons pagina, 
+hoe de tekst naast de afbeelding staat */
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.naastafbeelding {
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-left: 60px;
+    width: 90%;
+}
+.persoonfoto {
+    width: 175px;
+    height: 310px;
+    float: inline-start;
+    border: 4px solid rgb(240, 217, 1);
+    border-radius: 25px;
+    margin-right: 15px;
+}
+.text-box h2 {
+    font-size: 35px;
+    color: rgb(240, 217, 1);
+}
+.text-box p {
+    color: black;
+    font-size: 20px;
+}
+/* tot hier */
